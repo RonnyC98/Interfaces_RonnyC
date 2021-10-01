@@ -1,21 +1,12 @@
 /*PREGUNTA 1: COLORES A LAS CELDAS DE LA TABLA*/
 
-td[colspan="2"]{
+td[colspan="2"], td[rowspan="2"]{
     background-color: #234E54;
 }
-td[rowspan="2"]{
-    background-color: #234E54;
-}
-td[colspan="3"]{
+td[colspan="3"], td[rowspan="3"]{
     background-color: #ACA759;
 }
-td[rowspan="3"]{
-    background-color: #ACA759;
-}
-td[colspan="4"]{
-    background-color: #CEA885;
-}
-td[rowspan="4"]{
+td[colspan="4"], td[rowspan="4"]{
     background-color: #CEA885;
 }
 
@@ -45,6 +36,7 @@ li[id] .negrita{
     margin-left: 10%;
     margin-right: 10%;
     border: thin dotted #AC8159;
+    font-size: 0.85em;
 }
 
 /*PREGUNTA 5: SUBRAYA PARRAFOS QUE SIGUEN A OTRO PARRAFO*/
@@ -57,4 +49,10 @@ p + p{
 
 li > a{
     background-color: #755E8B;
+}
+
+/*OTROS*/ 
+
+.cursiva{
+    font-style: italic;
 }
