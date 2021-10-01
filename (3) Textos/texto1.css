@@ -1,0 +1,33 @@
+p:first-of-type{
+    font-weight: bold;
+    font-style: italic;
+    text-indent: 38px;
+}
+
+#consejo{
+    background-color: #CECA85;
+    color: #481c5d;
+}
+
+#textolinea{
+    text-transform: uppercase;
+    background-color: #f8ddc2;
+    color: #562b65;
+}
+
+h3{
+    background-color: #895F38;
+    color: #f7f7c2;
+}
+
+.clase{
+    color: #7b638e;
+    font-style: italic;
+    font-weight: normal;
+}
+#idparaestilo{
+    background-color: #9784a6;
+    color: white;
+    letter-spacing: 0.3em;
+}
+
