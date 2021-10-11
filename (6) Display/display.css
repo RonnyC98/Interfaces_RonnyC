@@ -1,0 +1,34 @@
+* { /* Todos los elementos de la página tienen borde */
+	border: thin solid #442A5D;
+}
+.enlinea {
+    	display: inline;
+	width: 20%;
+}
+#negrita {
+	display: block;
+	font-weight: bold;
+}
+.lista {
+	display: list-item;
+	list-style-type: square;
+	margin-left: 3em;
+}
+.nomostrar {
+	display: none;
+}
+.bloqueenlinea {
+	display: inline-block;
+	height: 9.5em;
+	width: 9.5em;
+}
+.celdadetabla {
+	display: table-cell;
+	padding-right: 0.3em;
+	padding-bottom: 0.3em;
+}
+.desplazado {
+	position: relative;
+	top: 1.3em;
+	right: 1.3em; 
+}
