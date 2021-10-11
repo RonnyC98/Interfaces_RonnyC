@@ -1,0 +1,9 @@
+body{
+    background-image: url("../imagenes/madrid.jpg")
+}
+
+div{
+    height: 12em;
+    width: 12em;
+    overflow: auto;
+}

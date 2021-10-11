@@ -1,0 +1,12 @@
+div{
+    height: 12em;
+    width: 12em;
+    overflow: auto;
+}
+
+body{
+    background-image: url("../imagenes/madrid.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
