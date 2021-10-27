@@ -1,0 +1,28 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+.contenedor{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3%;
+    height: 44%;
+    background-color: #7fffd4;
+}
+.contenedor>div{
+    display: flex;
+    justify-content: center;
+    padding: 0.8em;
+    background-color: #ff4500;
+    width: 10em;		  
+    height: 2rem;
+	font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+#parte1{
+    justify-content: space-between;
+}
+#parte2{
+    justify-content: space-around;
+}

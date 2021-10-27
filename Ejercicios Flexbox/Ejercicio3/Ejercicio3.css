@@ -1,0 +1,30 @@
+html, body{
+    height: 100%;
+    background-color: #191970;
+    margin: 0;
+}
+
+#contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+ 
+#contenedor>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    background-color: #4682b4;
+    height: 7em;
+    width: 7em;
+    font-weight: bold;
+}
+
+#contenedor>div:last-child{
+    align-self: flex-start;
+}

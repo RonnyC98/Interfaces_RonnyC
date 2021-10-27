@@ -1,0 +1,25 @@
+*{
+    border: 1px solid black;
+}
+#cabecera, #pie{
+    height: 3em;
+}
+
+#cuerpo{
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    
+}
+#arriba{
+    width: 10em;
+    
+}
+
+#medio{
+    height: 20em;
+}
+
+#cuerpo>div:nth-child(2){
+    flex-grow: 1;
+}

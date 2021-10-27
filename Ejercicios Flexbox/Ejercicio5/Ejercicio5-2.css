@@ -1,0 +1,32 @@
+div{
+    border: 2px solid black;
+}
+
+.flex-container{
+    display: flex;
+    align-items:stretch;
+    background-color:greenyellow;
+    flex-direction: row;
+    width: 300px;
+    height: auto;
+    justify-content: center; /* centra sobre la direccion del eje ppal*/
+    padding: 1em;
+}
+
+.flex-container>div{
+    background-color: orange;
+    color: black;
+    text-align: center;
+    width: 25px;
+    height: 50px;
+    font-size: 16px;
+}
+
+
+
+.flex-container > .small{
+    flex-grow: 1;
+}
+.flex-container > .medium{
+    flex-grow: 2;
+}
