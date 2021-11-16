@@ -1,0 +1,167 @@
+/*--CABECERA--*/
+
+#cabecera{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2b2d;
+    color: #888b87;
+    width: 100%; 
+}
+.titulo{/*titulo*/
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    padding-left: 1em;
+}
+/*CABECERA -> MENÚ*/
+#cabecera ul{
+    display: flex;
+    padding-right: 1em;
+    list-style: none;
+    justify-content: center;
+    align-items: center; 
+}
+#cabecera li{
+    padding: 1em;
+    text-align: center;
+}
+#cabecera li a{
+    color: rgba(255, 255, 255, 0.233);
+    text-decoration: none;
+}
+#cabecera li a:hover{
+    color: white;
+}
+/*CABECERA -> ICONOS REDES SOCIALES*/
+#cabecera div:last-child{
+    display: flex;
+    align-items: center; 
+    padding-right: 1em;
+}
+#fb1 a{
+    color: #3b5998;
+    border: 1px solid #3b5998;
+    border-radius: 0.2em;
+    padding: 0.4em;
+    text-decoration: none;
+}
+#tw1 a{
+    color: #00acee;
+    border: 1px solid #00acee;
+    border-radius: 0.2em;
+    padding: 0.4em;
+    text-decoration: none;
+    margin-left: 0.7em;
+}
+
+/*--CUERPO--*/
+
+/*--CUERPO--FORMULARIO--*/
+form{
+    text-align: center;
+}
+form input{
+    margin: 0.8em;
+    padding: 0.6em;
+}
+/*CUERPO-FORMULARIO -> BOTONES*/
+form button:nth-last-child(n+3){
+    background-color: white;
+    border-color: #d4605e;
+    color: #d4605e;
+    border-radius: 0.2em;
+    padding: 0.4em;
+}
+form button:nth-last-child(-n+2){
+    background-color: #0175d8;
+    border-color: #0175d8;
+    color: white;
+    border-radius: 0.2em;
+    padding: 0.4em;
+}
+form button{
+    margin: 0.4em;
+}
+/*--CUERPO--ETAPAS--*/
+#etapas{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.tab1>div, .subtab1>div{/*bordes de las tablas*/
+    border: 1px solid rgb(202, 202, 202);
+}
+.tab1 div:nth-child(2){/*estilos para la subtabla de dentro*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0.6em;
+    padding-top: 1.8em;
+    padding-bottom: 1.8em;
+}
+.tab1 div:nth-child(odd){/*colores de fondo de las tablas alternos*/
+    background-color:#f7f7f9;
+    padding: 0.6em;
+}
+.tab1 > div:nth-child(odd){/*fuente de titulo de las tablas principales*/
+    font-size: 0.6em;
+}
+
+/*--PIE DE PÁGINA--*/
+
+#pie{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2a2b2d;
+    color: #888b87;
+    width: 100%; 
+    height: 6em;
+    position: fixed;
+    bottom: 0;
+}
+#pie div{
+    display: flex;
+    align-items: center;
+}
+#pie a{/*menu de abajo*/
+    text-decoration: none;
+    color: white;
+}
+/*PIE DE PÁGINA -> ICONOS REDES SOCIALES*/
+#fb2 a{
+    color: white;
+    background-color: #3b5998;
+    border-radius: 0.2em;
+    padding: 0.4em;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#tw2 a{
+    color: white;
+    background-color: #00acee;
+    border-radius: 0.2em;
+    padding: 0.4em;
+    text-decoration: none;
+    margin-left: 0.7em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/*OTROS*/
+
+body{
+    margin: 0;
+}
+.negrita{
+    font-weight: bold;
+}
+#separa{/*div con la misma altura que el pie para que no tape las etapas con el zoom alto*/
+    height: 6em;
+}
