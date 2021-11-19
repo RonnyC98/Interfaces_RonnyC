@@ -1,0 +1,17 @@
+body{
+    background: radial-gradient(circle, #fff, #bbb)
+}
+.grid_container{
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-rows: repeat(3, 150px);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: dense;
+}
+
+.grid_item{
+    border: 1px solid black;
+    background-color: #999;
+}

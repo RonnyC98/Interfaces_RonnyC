@@ -1,25 +1,62 @@
-*{
-    border: 1px solid black;
-}
-#cabecera, #pie{
-    height: 3em;
-}
-
-#cuerpo{
-    display: flex;
-    gap: 1em;
-    padding: 1em;
-    
-}
-#arriba{
-    width: 10em;
-    
+#flexcontainer{
+	min-width: 500px;
+	max-width: 1200px;
+	width: 80vw;
+	height: 70vh;
+	min-height: 500px;
+	padding: 1em;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1em;
 }
 
-#medio{
-    height: 20em;
+header,article,main,aside,footer,div {
+	border: 1px solid black;
+	box-sizing: border-box;
 }
 
-#cuerpo>div:nth-child(2){
-    flex-grow: 1;
+body{
+	display: flex;
+	justify-content: center;
+}
+
+#flexcontainer header, #flexcontainer footer{
+	flex: 1 10%;	
+}
+
+#subcontainer{
+	flex: 1 80%;
+	padding: 1em;
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 1em;	
+}
+
+#subcontainer aside{
+	flex: 1 20%;
+}
+
+#subcontainer article{
+	flex: 1 70%;
+}
+
+#subcontainer main{
+	flex: 1 100%;
+	
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: flex-end;
+	gap: 1em;
+}
+
+.caja-flex{
+	border: 1px dotted blue;
+	height: fit-content;
+	min-height: 3rem;
+	flex: 0 1 20%;
 }
