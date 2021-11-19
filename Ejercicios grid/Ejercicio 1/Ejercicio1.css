@@ -1,0 +1,29 @@
+.grid{
+    height: 25rem;
+    display: grid;
+    
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-auto-rows: 2fr;
+    grid-gap: 0.5em;
+}
+
+.grid > div{
+    border: 1px solid black;
+    border-radius: 4%;
+}
+.grid > div:nth-child(odd){
+    background-color: gray;
+}
+
+.grid > div:nth-child(even){
+    background-color: yellow;
+}
+
+/*google analitics:
+
+prepararlo ya!
+
+*/
+
