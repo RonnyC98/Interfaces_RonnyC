@@ -11,10 +11,7 @@ div {
     border: 10px solid green;
     padding: 0.5em;
     margin: 0.5em;
-    width: calc(100% - 1em); /* Hay padding y margin lateral
-     de 0.5em,
-     por tanto restamos ambos (1em) para que quede el diseño
-      cuadrado */
+    width: calc(100% - 1em);
 }
 .image {
     border: 10px solid blue;
