@@ -1,71 +1,97 @@
+/*PARA DISPOSITIVOS PEQUEÑOS*/
+
+body, html{
+    margin: 0;
+    height: 100%;
+    background-image: url('imagenfondo5.png');
+    background-repeat: repeat;
+}
+
+/*CONTENEDOR*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.header, .mainGrid, .footer{
+    flex-grow: 0;
+}
+.sobrante{
+    flex-grow: 1;
+}
+
+/*APARTADOS A OCULTAR*/
+
+.contactanosHeader, .clientesHeader, .RRSSHeader, .tituloFooter{
+    display: none;
+}
+
 /*--CABECERA--*/
 
-#cabecera{
-    display: flex;
-    justify-content: space-between;
+.header{
     background-color: #2a2b2d;
-    color: #888b87;
-    width: 100%; 
-}
-.titulo{/*titulo*/
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 1em;
-    padding-left: 1em;
-}
-/*CABECERA -> MENÚ*/
-#cabecera ul{
-    display: flex;
-    padding-right: 1em;
-    list-style: none;
-    justify-content: center;
-    align-items: center; 
-}
-#cabecera li{
-    padding: 1em;
     text-align: center;
 }
-#cabecera li a{
+.header div{
+    padding: 0.2em;
+}
+/*CABECERA -> TÍTULO*/
+.titulo{
+    color: white;
+    font-size: 1.3em;
+    margin-top: 0.4em;
+    align-self: center;
+}
+/*CABECERA -> MENÚ*/
+.menuHeader{
+    text-align: center;
+}
+.itemMenuHeader>a{
     color: rgba(255, 255, 255, 0.233);
     text-decoration: none;
+    margin: 0.3em;
 }
-#cabecera li a:hover{
+.itemMenuHeader>a:hover{
     color: white;
-}
-/*CABECERA -> ICONOS REDES SOCIALES*/
-#cabecera div:last-child{
-    display: flex;
-    align-items: center; 
-    padding-right: 1em;
-}
-#fb1 a{
-    color: #3b5998;
-    border: 1px solid #3b5998;
-    border-radius: 0.2em;
-    padding: 0.4em;
-    text-decoration: none;
-}
-#tw1 a{
-    color: #00acee;
-    border: 1px solid #00acee;
-    border-radius: 0.2em;
-    padding: 0.4em;
-    text-decoration: none;
-    margin-left: 0.7em;
 }
 
 /*--CUERPO--*/
 
-/*--CUERPO--FORMULARIO--*/
-form{
-    text-align: center;
+.mainGrid{
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill,1fr);
+    gap: 1em;
+    padding: 1em;
 }
-form input{
-    margin: 0.8em;
-    padding: 0.6em;
+.formulario, .tabla1, .tabla2, .tabla3{
+    grid-column: span 3;
+}
+.formulario > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.formulario input{
+    text-align: center;
+    width: 80%;
+    border: 1px solid gray;
+    padding: 0.3em;
+    margin-top: 0.4em;
+    margin-bottom: 0.7em;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.9);
 }
 /*CUERPO-FORMULARIO -> BOTONES*/
+
+form button{
+    margin-bottom: 0.3em;
+}
 form button:nth-last-child(n+3){
     background-color: white;
     border-color: #d4605e;
@@ -80,88 +106,193 @@ form button:nth-last-child(-n+2){
     border-radius: 0.2em;
     padding: 0.4em;
 }
-form button{
-    margin: 0.4em;
+
+/*--CUERPO--TABLAS ETAPAS--*/
+.tabla{
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6);
 }
-/*--CUERPO--ETAPAS--*/
-#etapas{
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 3em;
-    margin-bottom: 2em;
+.tabla>div{
+    border: 1px solid black;
+}
+.tablaTitulo{
+    font-weight: bold;
+    background-color: #f0f0f5;
+}
+.tablaTitulo{
+    font-size: 0.8em;
+    padding: 0.4em;
+}
+.subtabla{
+    margin: 1em 0.5em 1em 0.5em;
+}
+.subtablaContenido, .tablaContenido{
+    background-color: white;
+}
+.subtabla>div{
+    border: 1px solid black;
+    padding: 0.4em;
+}
+.subtabla>div:last-child{
+    color: rgb(71, 71, 71);
+}
+.subtabla > div:nth-child(odd){
+    background-color: #f0f0f5; 
+}
+.subtablaContenido{
+    font-weight: bold;
+}
+
+/*PIE DE PÁGINA*/
+
+.footer{
+    background-color: #2a2b2d;
     text-align: center;
 }
-.tab1>div, .subtab1>div{/*bordes de las tablas*/
-    border: 1px solid rgb(202, 202, 202);
+.footer>div{
+    padding: 0.5em;
 }
-.tab1 div:nth-child(2){/*estilos para la subtabla de dentro*/
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.RRSSFooter{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    padding: 0.6em;
-    padding-top: 1.8em;
-    padding-bottom: 1.8em;
-}
-.tab1 div:nth-child(odd){/*colores de fondo de las tablas alternos*/
-    background-color:#f7f7f9;
-    padding: 0.6em;
-}
-.tab1 > div:nth-child(odd){/*fuente de titulo de las tablas principales*/
-    font-size: 0.6em;
-}
-
-/*--PIE DE PÁGINA--*/
-
-#pie{
-    display: flex;
-    justify-content: space-around;
-    background-color: #2a2b2d;
-    color: #888b87;
-    width: 100%; 
-    height: 6em;
-    position: fixed;
-    bottom: 0;
-}
-#pie div{
-    display: flex;
     align-items: center;
+    gap: 0.3em;
 }
-#pie a{/*menu de abajo*/
-    text-decoration: none;
-    color: white;
+.fbFooter, .twFooter{
+    border-radius: 0.2em;
+    padding: 0.2em;
 }
-/*PIE DE PÁGINA -> ICONOS REDES SOCIALES*/
-#fb2 a{
-    color: white;
+.fbFooter{
     background-color: #3b5998;
-    border-radius: 0.2em;
-    padding: 0.4em;
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
 }
-#tw2 a{
-    color: white;
+.twFooter{
     background-color: #00acee;
-    border-radius: 0.2em;
-    padding: 0.4em;
-    text-decoration: none;
-    margin-left: 0.7em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
 }
 
-/*OTROS*/
 
-body{
-    margin: 0;
+/*PARA DISPOSITIVOS MEDIANOS,
+  PARA TABLET*/
+
+@media all and (min-width: 768px) {
+
+    /*NUEVOS APARTADOS A MOSTRAR*/
+    .clientesHeader, .contactanosHeader, .clientesFooter{
+        display: block;
+    }
+
+    /*CAMBIOS EN EL HEADER*/
+    .menuHeader{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 0.5em;
+    }
+    /*CAMBIOS EN EL MAIN*/
+    .mainGrid{
+        width: 90%;
+    }
+    .tabla{
+        grid-column: span 1;
+        width: 100%;
+    }
+    .formulario input{
+        width: 65%;
+    }
+    /*CAMBIOS EN EL FOOTER*/
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4em;
+    }
+    .RRSSFooter{
+        flex-direction: row;
+    }
+    
 }
-.negrita{
-    font-weight: bold;
-}
-#separa{/*div con la misma altura que el pie para que no tape las etapas con el zoom alto*/
-    height: 6em;
+
+
+/*PARA DISPOSITIVOS GRANDES,
+  PARA PORTATILES U ORDENADORES DE MESA*/
+
+@media all and (min-width: 1024px) {
+
+    /*NUEVOS APARTADOS A MOSTRAR*/
+    .tituloFooter{
+        display: block;
+    }
+
+    /*CAMBIOS EN EL HEADER*/
+    .header{
+        display: flex;
+        height: 4em;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-right: 1em;
+    }  
+    .titulo{
+        padding: 0;
+        margin: 0;
+    }.menuHeader{
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .itemMenuHeader{
+        width: auto;
+        margin: 0.4em;
+    }
+    .RRSSHeader{
+        display: flex; 
+    }
+    .fbHeader a{
+        color: #3b5998;
+        border: 1px solid #3b5998;
+        border-radius: 0.2em;
+        padding: 0.4em;
+        text-decoration: none;
+    }
+    .twHeader a{
+        color: #00acee;
+        border: 1px solid #00acee;
+        border-radius: 0.2em;
+        padding: 0.4em;
+        text-decoration: none;
+        margin-left: 0.7em;
+    }
+    /*CAMBIOS EN EL MAIN*/
+    .mainGrid{
+        width: 75%;
+        max-width: 1200px;
+    }
+    .formulario > form{
+        display: block;
+        margin: 0 auto;
+    }
+    form{
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formulario input{
+        text-align: center;
+        width: 40%;  
+    }
+    .tabla{
+        grid-column: span 1;
+    }
+    .subtabla{
+        margin: 2.5em 0.8em 2.5em 0.8em; 
+    }
+
 }
