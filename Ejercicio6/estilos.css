@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+.contenedor{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    background-image: url("imgs/number-1-300px.a.jpg");
+    animation: miAnimacion 6s infinite;
+    
+}
+
+@keyframes miAnimacion {
+    0%{
+        background-image: url("imgs/number-1-300px.a.jpg");
+    }
+    25%{
+        background-image: url("imgs/number-2-300px.a.jpg");
+    }
+    50%{
+        background-image: url("imgs/number-3-300px.a.jpg");
+    }
+    75%{
+        background-image: url("imgs/4-1200x1200.png");
+        background-size: cover;
+    }
+    100%{
+        background-image: url("imgs/number-1-300px.a.jpg");
+        background-size: cover;
+    }
+}

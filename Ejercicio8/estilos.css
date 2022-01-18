@@ -1,0 +1,26 @@
+
+.main{
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    background-color: black;
+}
+.container{
+    background-color: red;
+    background-image: url("../images/dvdlogo.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:150px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:390px; top:150px;}
+    75%  {background-color:green; left:200px; top:300px;}
+    100% {background-color:red; left:0px; top:150px;}
+  }

@@ -1,0 +1,25 @@
+.main{
+    border: 1px solid black;
+    width: 465px;
+}
+.container{
+    background-color: red;
+    width: 65px;
+    animation-delay: 0s, 2s;
+    animation-name: antes, animacion;
+    animation-duration: 2s, 4s;
+    position: relative;
+}
+
+@keyframes antes{
+    from{left: 0px;}
+    to{left: 400px;}
+}
+
+@keyframes animacion{
+    0% {transform: rotate(0deg); left: 400px; }
+    25% {transform: rotate(90deg);left: 300px;}
+    50% {transform: rotate(180deg);left: 200px;}
+    75% {transform: rotate(270deg);left: 100px;}
+    100%{transform: rotate(360deg);left: 0px;}
+}
