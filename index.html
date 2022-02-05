@@ -1,117 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <title>Plantilla 14</title>
-    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLN6CSC5JV"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-WLN6CSC5JV');
-    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="container">
+    <div class="inicio">
+        <header>
+            	
+            <div class="etiqueta_picture">   
+                <picture>	
+                    
+                    <source
+                        media="(min-width: 1200px)"
+                        sizes="700px"
+                        srcset="images/logo2_1200.png 1200w"
+                        type="image/jpeg"/>
+                    
+                    <source
+                        media="(min-width: 800px)"
+                        sizes="50vw"
+                        srcset="images/logo2_800.png 800w,
+                        images/logo2_800@2x.png 2x"
+                    />
+                    <source
+                        media="(min-width: 600px)"
+                        sizes="(min-width: 700px)60vw, 40vw"
+                        srcset="images/logo2_600.png 600w"
+                        />	
 
-        <div class="header">
-            <div class="titulo">DAW IT CONSULTING</div>
-            <div class="menuHeader">
-                <div class="itemMenuHeader"><a href="#">Inicio</a></div>
-                <div class="itemMenuHeader"><a href="#">Tareas</a></div>
-                <div class="itemMenuHeader clientesHeader"><a href="#">Clientes Asociados</a></div>
-                <div class="itemMenuHeader contactanosHeader"><a href="#">Contáctanos</a></div>
-            </div>
-            <div class="RRSSHeader">
-                <div class="fbHeader"><a href="#">Facebook</a></div>
-                <div class="twHeader"><a href="#">Twitter</a></div>
-            </div>
-        </div>
+                    <img
+                        src="images/logo2.png" alt="Prueba en navegadores antiguos"/>		
+                </picture>
+            </div> 
+        </header>
 
-        <div class="mainGrid">
-            
-            <div class="formulario">
-                <form>
-                    <label for="fname">Nombre de proyecto:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Nombre de proyecto"><br>
-                    <label for="lname">Número de Sprint:</label>
-                    <input type="text" id="lname" name="lname" placeholder="Número Sprint"><br>
-                    <label for="fname">Fecha Inicio Sprint:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Fecha Inicio Sprint"><br>
-                    <label for="fname">Fecha Fin Sprint:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Fecha Fin Sprint"><br>
-                    <button name="button">Enviar</button>
-                    <button name="button2">Cerrar Sesión</button><br>
-                    <button name="button3">Anteriores Tareas</button>
-                    <button name="button4">Siguientes Tareas</button>
-                </form>
-            </div>
 
-            <div class="tabla tabla1">
-                <div class="tablaTitulo">TO-DO</div>
-                <div class="tablaContenido">
-                    <div class="subtabla">
-                        <div class="subtablaTitulo">
-                            Task 3
-                        </div>
-                        <div class="subtablaContenido">
-                            Tags Estimated Hours = 5 <br> Remaining Hours = 2
-                        </div>
-                        <div class="subtablaNotas">
-                            Notes <br> Do many things...
-                        </div>  
-                    </div>
-                </div>
+        <div class="main">
+            <div class="musica_fondo">
+                <h3>Música de fondo</h3>
+                <audio controls autoplay loop>
+                    <source src="" type="audio/ogg"> 
+                    <source src="audios/audio_fondo.mp3" type="audio/mp3"> 
+                    Tu navegador no soporta el elemento audio
+                </audio>
             </div>
-            <div class="tabla tabla2">
-                <div class="tablaTitulo">TO-DO</div>
-                <div class="tablaContenido">
-                    <div class="subtabla">
-                        <div class="subtablaTitulo">
-                            Task 3
-                        </div>
-                        <div class="subtablaContenido">
-                            Tags Estimated Hours = 5  <br> Remaining Hours = 2
-                        </div>
-                        <div class="subtablaNotas">
-                            Notes <br> Do many things...
-                        </div>  
-                    </div>
-                </div>
+            <div class="container">
+                <h1>El Hotel</h1>
+                <h1>Nuestro Servicios</h1>
+                <video controls autoplay="autoplay" muted loop>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    <source src="" type="video/ogg; codecs='theora,  vorbis'">
+                    <source src="" type="video/webm">
+                    No está soportado el vídeo
+                </video>
+                <video controls autoplay="autoplay" muted loop>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                    <source src="" type="video/ogg; codecs='theora,  vorbis'">
+                    <source src="" type="video/webm">
+                    No está soportado el vídeo
+                </video>
             </div>
-            <div class="tabla tabla3">
-                <div class="tablaTitulo">TO-DO</div>
-                <div class="tablaContenido">
-                    <div class="subtabla">
-                        <div class="subtablaTitulo">
-                            Task 3
-                        </div>
-                        <div class="subtablaContenido">
-                            Tags Estimated Hours = 5 <br> Remaining Hours = 2
-                        </div>
-                        <div class="subtablaNotas">
-                            Notes <br> Do many things...
-                        </div>  
+            <div class="area_transicion">
+                <div class="circulo"></div>
+                    <div class="texto">
+                        <h1>PLAYA LA SALADA</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta laboriosam sapiente est non officiis temporibus corporis. Pariatur minima deserunt impedit. Temporibus corporis perferendis dolor officiis, doloribus ea mollitia provident?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta laboriosam sapiente est non officiis temporibus corporis. Pariatur minima deserunt impedit. Temporibus corporis perferendis dolor officiis, doloribus ea mollitia provident?
+                        </p>
                     </div>
-                </div>
+                    <img src="images/imagen2.png" alt="playa">
             </div>
-            
         </div>
         <div class="sobrante"></div>
-        <div class="footer">
-            <div class="titulo tituloFooter">DAW IT CONSULTING</div>
-            <div class="clientesFooter"><a href="#">Clientes asociados</a></div>
-            <div class="contactanosFooter"><a href="#">Contáctanos</a></div>
-            <div class="RRSSFooter">
-                <div class="fbFooter"><a href="https://www.facebook.com/">Facebook</a></div>
-                <div class="twFooter"><a href="https://twitter.com/?lang=es">Twitter</a></div>
-            </div>
-        </div>
-
+        <footer>
+            <div class="ola ola1"></div>
+            <div class="ola ola2"></div>
+            <div class="ola ola3"></div>
+            <div class="ola ola4"></div>
+        </footer>
     </div>
+    
+    
+    
+
+    
 </body>
 </html>
