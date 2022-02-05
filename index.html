@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,41 +9,45 @@
 </head>
 <body>
     <div class="inicio">
-        <header>
-            	
-            <div class="etiqueta_picture">   
+
+        <header>	
+            <div class="etiqueta_picture"><!--div para imagen centrada-->
+                <!--SE RECOMIENDA VERLO EN FIREFOX. CADA IMAGEN LLEVA UN TEXTO QUE INDICA SU RESOLUCIÓN Y NOMBRE.-->
                 <picture>	
-                    
                     <source
                         media="(min-width: 1200px)"
                         sizes="700px"
                         srcset="images/logo2_1200.png 1200w"
-                        type="image/jpeg"/>
-                    
+                        type="image/png"/>
+                    <!--versión para dpi 2x-->
                     <source
                         media="(min-width: 800px)"
                         sizes="50vw"
                         srcset="images/logo2_800.png 800w,
                         images/logo2_800@2x.png 2x"
-                    />
+                        type="image/png"/>
+                    <!--tamaños diferentes, para la misma resolución usando sizes-->
                     <source
                         media="(min-width: 600px)"
                         sizes="(min-width: 700px)60vw, 40vw"
                         srcset="images/logo2_600.png 600w"
-                        />	
-
+                        type="image/png"/>	
+                    <!--formato diferente, por defecto-->
                     <img
-                        src="images/logo2.png" alt="Prueba en navegadores antiguos"/>		
+                        src="images/logo2.jpg" alt="Prueba en navegadores antiguos"/>		
                 </picture>
             </div> 
         </header>
 
-
         <div class="main">
             <div class="musica_fondo">
                 <h3>Música de fondo</h3>
-                <audio controls autoplay loop>
-                    <source src="" type="audio/ogg"> 
+                <!--En Chrome funciona el autoplay y suena, pero al ponerle muted no reproduce nada aunque sea sin sonido.   
+                    <audio controls="controls" autoplay="autoplay">   -->
+                <!--En Firefox solo con el autoplay no reproduce nada, pero al ponerle muted si reproduce el sonido aunque muteado-->
+                <!--LO DEJARÉ COMO FIREFOX PORQUE ES DONDE PROBABA MÁS POR LAS RESOLUCIONES DE LAS IMÁGENES-->
+                <audio controls="controls" autoplay="autoplay" muted="muted" loop="loop" preload="auto">
+                    <source src="audios/audio_fondo.ogg" type="audio/ogg"> 
                     <source src="audios/audio_fondo.mp3" type="audio/mp3"> 
                     Tu navegador no soporta el elemento audio
                 </audio>
@@ -51,19 +55,16 @@
             <div class="container">
                 <h1>El Hotel</h1>
                 <h1>Nuestro Servicios</h1>
-                <video controls autoplay="autoplay" muted loop>
+                <!--video1-->
+                <video controls="controls" loop="loop" preload="none">
+                    <source src="videos/video1.ogv" type="video/ogg">
                     <source src="videos/video1.mp4" type="video/mp4">
-                    <source src="" type="video/ogg; codecs='theora,  vorbis'">
-                    <source src="" type="video/webm">
-                    No está soportado el vídeo
+                    Tu navegador no soporta el elemento video
                 </video>
-                <video controls autoplay="autoplay" muted loop>
-                    <source src="videos/video2.mp4" type="video/mp4">
-                    <source src="" type="video/ogg; codecs='theora,  vorbis'">
-                    <source src="" type="video/webm">
-                    No está soportado el vídeo
-                </video>
+                <!--video2-->
+                <iframe src="https://www.youtube.com/embed/SYaX2Y-kwA4?listType=playlist&playlist=SYaX2Y-kwA4&t=24s&controls=2&loop=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <!--transiciones-->
             <div class="area_transicion">
                 <div class="circulo"></div>
                     <div class="texto">
@@ -72,21 +73,18 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta laboriosam sapiente est non officiis temporibus corporis. Pariatur minima deserunt impedit. Temporibus corporis perferendis dolor officiis, doloribus ea mollitia provident?
                         </p>
                     </div>
-                    <img src="images/imagen2.png" alt="playa">
+                    <img src="images/imagen2.png" alt="Silla de playa" longdesc="https://w7.pngwing.com/pngs/210/265/png-transparent-beach-wedding-invitation-hotel-chair-seaside-vacation-painted-hand-orange-thumbnail.png">
             </div>
         </div>
         <div class="sobrante"></div>
+        <!--animacion de varias olas-->
         <footer>
             <div class="ola ola1"></div>
             <div class="ola ola2"></div>
             <div class="ola ola3"></div>
             <div class="ola ola4"></div>
         </footer>
-    </div>
-    
-    
-    
 
-    
+    </div> 
 </body>
 </html>
