@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+<!-- 3.1.2 Idioma de las Partes(Nivel AA): permite a los lectores de pantalla leer el contenido de forma adecuada.-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pixels Hotels</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <!--Se ha evaluado la accesibilidad con wave
+        Ha detectado 0 Errores, 3 alertas (detecta audio, video y un video de Youtube)
+        y 3 buenas características( 1.1.1 ; 2.4.6 ; 3.1.2 )-->
     <div class="inicio">
-
         <header>	
             <div class="etiqueta_picture"><!--div para imagen centrada-->
                 <!--SE RECOMIENDA VERLO EN FIREFOX. CADA IMAGEN LLEVA UN TEXTO QUE INDICA SU RESOLUCIÓN Y NOMBRE.-->
@@ -33,8 +36,8 @@
                         srcset="images/logo2_600.png 600w"
                         type="image/png"/>	
                     <!--formato diferente, por defecto-->
-                    <img
-                        src="images/logo2.jpg" alt="Prueba en navegadores antiguos"/>		
+                    <!-- 1.1.1 Contenido no textual (Nivel A): El texto alternativo ayuda a los usuarios que no tengan terminales gráficas, con discapacidades visuales...-->
+                    <img src="images/logo2.jpg" alt="Prueba en navegadores antiguos"/>		
                 </picture>
             </div> 
         </header>
@@ -42,9 +45,7 @@
         <div class="main">
             <div class="musica_fondo">
                 <h3>Música de fondo</h3>
-                <!--En Chrome funciona el autoplay y suena, pero al ponerle muted no reproduce nada aunque sea sin sonido.   
-                    <audio controls="controls" autoplay="autoplay">   -->
-                <!--En Firefox solo con el autoplay no reproduce nada, pero al ponerle muted si reproduce el sonido aunque muteado-->
+                <!--En Firefox solo con el autoplay no reproduce nada, pero al ponerle muted si reproduce aunque muteado. En Chrome con poner solo autoplay sonaría-->
                 <!--LO DEJARÉ COMO FIREFOX PORQUE ES DONDE PROBABA MÁS POR LAS RESOLUCIONES DE LAS IMÁGENES-->
                 <audio controls="controls" autoplay="autoplay" muted="muted" loop="loop" preload="auto">
                     <source src="audios/audio_fondo.ogg" type="audio/ogg"> 
@@ -53,6 +54,7 @@
                 </audio>
             </div>
             <div class="container">
+                <!--2.4.6 Encabezados y Etiquetas(Nivel AA): son informartivos y definen correctamente la estructura de la página -->
                 <h1>El Hotel</h1>
                 <h1>Nuestro Servicios</h1>
                 <!--video1-->
@@ -73,6 +75,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta laboriosam sapiente est non officiis temporibus corporis. Pariatur minima deserunt impedit. Temporibus corporis perferendis dolor officiis, doloribus ea mollitia provident?
                         </p>
                     </div>
+                     <!-- 1.1.1 Contenido no textual (Nivel A)-->
                     <img src="images/imagen2.png" alt="Silla de playa">
             </div>
         </div>
