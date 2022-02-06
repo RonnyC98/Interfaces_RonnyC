@@ -1,0 +1,22 @@
+.container{
+    border: 1px solid black;
+    
+}
+.caja{
+    margin: 15px;
+    position: relative;
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    transition: all 4s;
+    
+}
+
+.caja:hover{
+    background-color: blue;
+    transform: rotate(270deg) scale(0.5);
+    color: yellow;
+    font-size: 1.5em;
+    top: 0px;
+    
+}

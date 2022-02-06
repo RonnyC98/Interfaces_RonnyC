@@ -15,13 +15,19 @@
 		background:#333;
 	}
 			
-	.ball:hover {				
+	.ball {				
 		animation-name: ballmove;
 		animation-duration: 2s;
 		animation-iteration-count: infinite;
 		animation-timing-function: ease-in-out;				
 		animation-fill-mode:forwards;
 		animation-direction: alternate;	
+		animation-play-state: paused;
+	}
+
+	.ball:hover {				
+		animation-name: ballmove;
+		animation-play-state: running;
 	}
 				
 	@keyframes ballmove {
