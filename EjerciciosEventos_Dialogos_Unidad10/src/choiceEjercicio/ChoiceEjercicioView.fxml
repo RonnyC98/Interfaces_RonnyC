@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="305.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="choiceEjercicio.ChoiceEjercicioController">
+   <center>
+      <ListView fx:id="list1" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </BorderPane.margin>
+      </ListView>
+   </center>
+   <bottom>
+      <Button fx:id="botonMostrarDialogo" mnemonicParsing="false" text="Mostrar diálogo" BorderPane.alignment="TOP_CENTER">
+         <BorderPane.margin>
+            <Insets bottom="15.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>
